@@ -56,7 +56,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+//void delay_us(uint16_t us);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -64,8 +64,10 @@ void Error_Handler(void);
 #define DHT11_GPIO_Port GPIOA
 #define Echo1_Pin GPIO_PIN_1
 #define Echo1_GPIO_Port GPIOA
+#define Echo1_EXTI_IRQn EXTI1_IRQn
 #define Echo2_Pin GPIO_PIN_2
 #define Echo2_GPIO_Port GPIOA
+#define Echo2_EXTI_IRQn EXTI2_IRQn
 #define Trig1_Pin GPIO_PIN_3
 #define Trig1_GPIO_Port GPIOA
 #define Trig2_Pin GPIO_PIN_4
